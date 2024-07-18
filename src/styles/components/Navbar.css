@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.barre-navigation {
+    background-color: #03045E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navigation-gauche {
+    display: flex;
+    align-items: center;
+}
+
+.titre-navigation {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.titre-jaune {
+    color: yellow;
+}
+
+.titre-blanc {
+    color: white;
+}
+
+.logo-navigation {
+    height: 70px;
+    margin-left: 20px;
+}
+
+.logo-utilisateur {
+    height: 20px;
+}
+
+.container-connexion-recherche {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.lien-navigation {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.lien-navigation span {
+    margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+    .titre-navigation {
+        font-size: 2.5rem;
+    }
+
+    .logo-navigation {
+        height: 60px;
+    }
+
+    .logo-utilisateur {
+        height: 25px;
+    }
+
+    .lien-navigation {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .barre-navigation {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navigation-gauche {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .titre-navigation {
+        font-size: 2rem;
+        margin: 0 10px 0 0;
+    }
+
+    .logo-navigation {
+        height: 50px;
+        margin: 0;
+    }
+
+    .container-connexion-recherche {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .lien-navigation {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .lien-navigation span {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .titre-navigation {
+        font-size: 1.5rem;
+    }
+
+    .logo-navigation {
+        height: 40px;
+    }
+
+    .logo-utilisateur {
+        height: 20px;
+    }
+
+    .lien-navigation {
+        font-size: 14px;
+    }
+}
